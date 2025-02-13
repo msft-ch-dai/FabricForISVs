@@ -1,0 +1,63 @@
+table 'SalesLT ProductCategory'
+	lineageTag: 7c4ed797-5fd8-441c-80cd-8c2a270d40c6
+
+	column ProductCategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0002cf70-aefb-4d89-b384-58668d26c7de
+		summarizeBy: none
+		sourceColumn: ProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentProductCategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: 2043827f-8e7a-4361-89c7-ba57950714d4
+		summarizeBy: count
+		sourceColumn: ParentProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 72949f58-b53a-4cc9-8414-ec21e97e321a
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		lineageTag: c2ba6964-e006-4a65-8330-bc05cacca569
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 150d641c-0e29-496b-b9af-5fb601b469f6
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: efc1d064-3574-4fe0-bce8-633c53954b7f
+			defaultHierarchy: LocalDateTable_0ae225e2-8cf4-4d97-b3de-70ced7c5c4c1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT ProductCategory' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    rbklsql = Source{[Name="rbklsql"]}[Data],
+				    SalesLT_ProductCategory = rbklsql{[Schema="SalesLT",Item="ProductCategory"]}[Data]
+				in
+				    SalesLT_ProductCategory
+
+	annotation PBI_ResultType = Table
+

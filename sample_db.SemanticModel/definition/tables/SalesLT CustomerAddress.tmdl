@@ -1,0 +1,63 @@
+table 'SalesLT CustomerAddress'
+	lineageTag: 58852d36-b1f0-41a4-aa45-76f68bad0a73
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: e8cc3da2-7cfc-427a-a2ad-2e19eb4c6c2e
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressID
+		dataType: int64
+		formatString: 0
+		lineageTag: 7008bbee-8083-484d-a31f-1322190fc665
+		summarizeBy: none
+		sourceColumn: AddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressType
+		dataType: string
+		lineageTag: d1d1f669-531e-423e-8581-8dd0b94d7a04
+		summarizeBy: none
+		sourceColumn: AddressType
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		lineageTag: ab77e2b3-9ecc-43e6-ad93-661458c6dbc7
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: dbac9539-52b7-4fa6-8543-a10fde5d70d8
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: d8be2129-0364-4e4f-92c3-8085509d22b0
+			defaultHierarchy: LocalDateTable_7cbcbdc6-8d6d-415e-9297-4b1e5a727353.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT CustomerAddress' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    rbklsql = Source{[Name="rbklsql"]}[Data],
+				    SalesLT_CustomerAddress = rbklsql{[Schema="SalesLT",Item="CustomerAddress"]}[Data]
+				in
+				    SalesLT_CustomerAddress
+
+	annotation PBI_ResultType = Table
+

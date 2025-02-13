@@ -1,0 +1,105 @@
+table 'SalesLT SalesOrderDetail'
+	lineageTag: 9dd3f5bc-8bc6-4964-8d19-1c6f80161bae
+
+	column SalesOrderID
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f46b34b-005e-42e4-973d-2b9977c79811
+		summarizeBy: none
+		sourceColumn: SalesOrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesOrderDetailID
+		dataType: int64
+		formatString: 0
+		lineageTag: d9eb4efe-07d0-4784-a350-1b0bef935c63
+		summarizeBy: count
+		sourceColumn: SalesOrderDetailID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderQty
+		dataType: int64
+		formatString: 0
+		lineageTag: d53555e8-22b3-4b90-9f3d-665379db72d8
+		summarizeBy: sum
+		sourceColumn: OrderQty
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		lineageTag: ce182771-1149-4189-beb2-722929a5f9fa
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPrice
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: 615943d6-19f6-4818-a71d-ef85c6806f48
+		summarizeBy: sum
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column UnitPriceDiscount
+		dataType: decimal
+		formatString: "£"#,0.###############;-"£"#,0.###############;"£"#,0.###############
+		lineageTag: c82577da-7734-4ea1-b4b7-dc91aab5d523
+		summarizeBy: sum
+		sourceColumn: UnitPriceDiscount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-GB"}
+
+	column LineTotal
+		dataType: double
+		lineageTag: 7a30960c-a5b6-439e-835a-4bf811c42a3f
+		summarizeBy: sum
+		sourceColumn: LineTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rowguid
+		dataType: string
+		lineageTag: 064d17b0-19d9-43ff-b3c5-7f8c204740f2
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6e605a3d-0fdd-4fa2-abc0-07869aa3317c
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: 2615504f-9be7-42a3-be24-405dcc1cab44
+			defaultHierarchy: LocalDateTable_4a6712f9-d877-4f0c-a4a5-074d972d166b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT SalesOrderDetail' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    rbklsql = Source{[Name="rbklsql"]}[Data],
+				    SalesLT_SalesOrderDetail = rbklsql{[Schema="SalesLT",Item="SalesOrderDetail"]}[Data]
+				in
+				    SalesLT_SalesOrderDetail
+
+	annotation PBI_ResultType = Table
+

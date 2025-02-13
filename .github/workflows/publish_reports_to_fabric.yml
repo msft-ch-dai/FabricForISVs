@@ -1,6 +1,6 @@
 # https://github.com/microsoft/Analysis-Services/blob/master/pbidevmode/sample-ado-pipelines/DeployPBIP.yml
 
-name: Deploy PowerBI report
+name: Publish PowerBI report
 run-name: Deploy ${{ github.ref}} to ${{ inputs.environment }} by @${{ github.actor }} 
 
 on:

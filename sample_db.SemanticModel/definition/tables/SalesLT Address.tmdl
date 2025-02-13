@@ -1,0 +1,92 @@
+table 'SalesLT Address'
+	lineageTag: 03e7084b-1b11-42d8-9dcc-ef1bed329c51
+
+	column AddressID
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e97c161-6b18-43be-b0c9-ee87b71e4fda
+		summarizeBy: none
+		sourceColumn: AddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine1
+		dataType: string
+		lineageTag: 9c2b32e5-924e-435e-9b40-05b68a1631f0
+		summarizeBy: none
+		sourceColumn: AddressLine1
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine2
+		dataType: string
+		lineageTag: ff0397fd-384e-46a6-ac0e-698f3b0ddf17
+		summarizeBy: none
+		sourceColumn: AddressLine2
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 87930045-81d1-4d53-bcd7-ebb840ce59fc
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateProvince
+		dataType: string
+		lineageTag: 6622f4a6-8a53-4271-8fbf-861068678d9e
+		summarizeBy: none
+		sourceColumn: StateProvince
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryRegion
+		dataType: string
+		lineageTag: 2da3bacc-ebcf-4d0a-ac11-939314b91517
+		summarizeBy: none
+		sourceColumn: CountryRegion
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalCode
+		dataType: string
+		lineageTag: 89cf8b51-b3da-454e-b356-a100f0ab0deb
+		summarizeBy: none
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		lineageTag: 22eeb0fe-77a8-4e31-ab4d-781d88687443
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 23cecf4f-d8cf-4143-81ce-9ee3993afc0e
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		variation Variation
+			isDefault
+			relationship: b5652c80-3ef8-461f-b548-bbd8600076c3
+			defaultHierarchy: LocalDateTable_3c634cbf-6752-4c5a-ba30-ab987648383d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT Address' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    rbklsql = Source{[Name="rbklsql"]}[Data],
+				    SalesLT_Address = rbklsql{[Schema="SalesLT",Item="Address"]}[Data]
+				in
+				    SalesLT_Address
+

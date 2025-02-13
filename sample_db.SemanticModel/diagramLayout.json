@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1181.6363898786681,
+            "y": 571.34473700893909
+          },
+          "nodeIndex": "SalesLT Address",
+          "nodeLineageTag": "03e7084b-1b11-42d8-9dcc-ef1bed329c51",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1311.8389008200775,
+            "y": 214.17070718991863
+          },
+          "nodeIndex": "SalesLT Customer",
+          "nodeLineageTag": "b4403ddc-4096-4d5d-94ec-cb2eb1d27911",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1601.7082491041281,
+            "y": 515.14696327865465
+          },
+          "nodeIndex": "SalesLT CustomerAddress",
+          "nodeLineageTag": "58852d36-b1f0-41a4-aa45-76f68bad0a73",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 312.61012156770607,
+            "y": 510.56743448967791
+          },
+          "nodeIndex": "SalesLT Product",
+          "nodeLineageTag": "a54c4343-6ee0-44dc-bc84-afb4694856ab",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 227.90570280716292,
+            "y": 254.33256932917033
+          },
+          "nodeIndex": "SalesLT ProductCategory",
+          "nodeLineageTag": "7c4ed797-5fd8-441c-80cd-8c2a270d40c6",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 606.32174786734,
+            "y": 689.65067963889669
+          },
+          "nodeIndex": "SalesLT ProductDescription",
+          "nodeLineageTag": "291a1d27-f112-4a78-a03c-e5b41db1faee",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 509.65995908998923
+          },
+          "nodeIndex": "SalesLT ProductModel",
+          "nodeLineageTag": "b2f87c2b-0135-4583-970f-21bb8da282dd",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 893.39207889496572,
+            "y": 613.62012342516459
+          },
+          "nodeIndex": "SalesLT ProductModelProductDescription",
+          "nodeLineageTag": "6739141d-03e5-425a-9d0e-783ce258cc29",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 601.48371918112946,
+            "y": 340.92999954077249
+          },
+          "nodeIndex": "SalesLT SalesOrderDetail",
+          "nodeLineageTag": "9dd3f5bc-8bc6-4964-8d19-1c6f80161bae",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 702.19647262258127,
+            "y": -10
+          },
+          "nodeIndex": "SalesLT SalesOrderHeader",
+          "nodeLineageTag": "27b6494c-ca4b-469c-bd81-ba74d60fbe8a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
