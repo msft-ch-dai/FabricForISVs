@@ -13,7 +13,8 @@ Each *environment* will also define its own credentials and workspace name throu
 
 ### Example implementation of Option 4 with GitHub - [CI/CD for ISVs in Fabric (managing multiple customers/solutions)](https://learn.microsoft.com/en-us/fabric/cicd/manage-deployment#option-4---cicd-for-isvs-in-fabric-managing-multiple-customerssolutions)
 
-![image](https://github.com/user-attachments/assets/826d4fc7-1894-4f7b-a7d0-c0b6aaa18006)
+![image](https://github.com/user-attachments/assets/36d1dd62-7a5a-4aee-bf32-381c2842d171)
+
 
 
 This option is different from the others. It's most relevant for Independent Software Vendors (ISV) who build SaaS applications for their customers on top of Fabric. ISVs usually have a separate workspace for each customer and can have as many as several hundred or thousands of workspaces. When the structure of the analytics provided to each customer is similar and out-of-the-box, we recommend having a centralized development and testing process that splits off to each customer only in the *Prod* stage.
