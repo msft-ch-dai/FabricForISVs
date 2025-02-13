@@ -5,6 +5,8 @@
 
 # Fabric PowerBI Embedded CI/CD sample implementation with GitHub actions
 
+![Publish PowerBI report](https://github.com/msft-ch-dai/FabricForISVs/actions/workflows/publish_reports_to_fabric.yml/badge.svg)
+
 ### Release branches
 
 Branching strategy can be enforce through [Deployment Protection Rules](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment). By doing so we can ensure that only *releases/\** branches can be published to customer environments.
