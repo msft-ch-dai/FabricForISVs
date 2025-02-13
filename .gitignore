@@ -1,4 +1,4 @@
 **/.pbi/localSettings.json
-**/.pbi/cache.abf
+#**/.pbi/cache.abf
 test.ps1
 modules
