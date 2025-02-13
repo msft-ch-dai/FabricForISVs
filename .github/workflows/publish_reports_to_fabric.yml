@@ -82,5 +82,5 @@ jobs:
         $workspaceId = Get-FabricWorkspace -workspaceName $workspaceName
 
         Write-Host "##[debug]Publish report"
-        $importInfo = Import-FabricItems -workspaceId $workspaceId -path $workingFolder
+        $importInfo = Import-FabricItems -workspaceId $workspaceId -path "."
         Write-Host "##[debug]Imported report $importInfo"
