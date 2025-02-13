@@ -133,9 +133,13 @@ table 'SalesLT Customer'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    Source = Sql.Databases(sqlserver),
 				    rbklsql = Source{[Name="rbklsql"]}[Data],
 				    SalesLT_Customer = rbklsql{[Schema="SalesLT",Item="Customer"]}[Data]
 				in
 				    SalesLT_Customer
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
 

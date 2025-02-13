@@ -53,11 +53,13 @@ table 'SalesLT ProductCategory'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases("rbklsql.database.windows.net"),
+				    Source = Sql.Databases(sqlserver),
 				    rbklsql = Source{[Name="rbklsql"]}[Data],
 				    SalesLT_ProductCategory = rbklsql{[Schema="SalesLT",Item="ProductCategory"]}[Data]
 				in
 				    SalesLT_ProductCategory
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 
