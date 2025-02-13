@@ -1,5 +1,6 @@
 # FabricForISVs
-Fabric PowerBI publishing pipeline for ISVs
+
+![image](https://github.com/user-attachments/assets/79ad4593-981d-4602-92c8-aff19ef7cd8c)
 
 
 # Fabric PowerBI Embedded CI/CD sample implementation with GitHub actions
