@@ -78,8 +78,8 @@ jobs:
         Write-Host "##[debug]Authentication with SPN $appId"
         Set-FabricAuthToken -servicePrincipalId $appId -servicePrincipalSecret $appSecret -tenantId $tenantId -reset
 
-        Write-Host "##[debug]Get workspace $workspaceName"
-        $workspaceId = Get-FabricWorkspace -workspaceName $workspaceName
+        $workspaceId = New-FabricWorkspace -name $workspaceName -skipErrorIfExists
+        Write-Host "##[debug]WorkspaceId: $workspaceId"
 
         Write-Host "##[debug]Publish report"
         $importInfo = Import-FabricItems -workspaceId $workspaceId -path "."
