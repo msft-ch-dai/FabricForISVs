@@ -1,4 +1,4 @@
-expression sqlserver = "rbklsql.database.windows.net" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+expression sqlserver = "rbklsql.database.windows.net" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 90ac0bae-b949-4c12-9cb5-a0b0ad1682c2
 
 	annotation PBI_NavigationStepName = Navigation
