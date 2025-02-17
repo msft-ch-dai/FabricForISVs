@@ -84,9 +84,8 @@ table 'SalesLT Address'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases(sqlserver),
-				    rbklsql = Source{[Name="rbklsql"]}[Data],
-				    SalesLT_Address = rbklsql{[Schema="SalesLT",Item="Address"]}[Data]
+				    Source = Sql.Database(sqlserver, database_name),
+				    SalesLT_Address = Source{[Schema="SalesLT",Item="Address"]}[Data]
 				in
 				    SalesLT_Address
 

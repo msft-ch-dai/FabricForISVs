@@ -224,9 +224,8 @@ table 'SalesLT SalesOrderHeader'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases(sqlserver),
-				    rbklsql = Source{[Name="rbklsql"]}[Data],
-				    SalesLT_SalesOrderHeader = rbklsql{[Schema="SalesLT",Item="SalesOrderHeader"]}[Data]
+				    Source = Sql.Database(sqlserver, database_name),
+				    SalesLT_SalesOrderHeader = Source{[Schema="SalesLT",Item="SalesOrderHeader"]}[Data]
 				in
 				    SalesLT_SalesOrderHeader
 

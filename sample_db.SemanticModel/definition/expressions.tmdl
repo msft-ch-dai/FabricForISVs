@@ -5,3 +5,10 @@ expression sqlserver = "rbklsql.database.windows.net" meta [IsParameterQuery=tru
 
 	annotation PBI_ResultType = Text
 
+expression database_name = "rbklsql" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 31e7b575-4860-4d94-bc14-59fab372a1e2
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["SalesLT Address","SalesLT Customer","SalesLT CustomerAddress","SalesLT Product","SalesLT ProductCategory","SalesLT ProductDescription","SalesLT ProductModel","SalesLT ProductModelProductDescription","SalesLT SalesOrderDetail","SalesLT SalesOrderHeader","sqlserver"]
+annotation PBI_QueryOrder = ["SalesLT Address","SalesLT Customer","SalesLT CustomerAddress","SalesLT Product","SalesLT ProductCategory","SalesLT ProductDescription","SalesLT ProductModel","SalesLT ProductModelProductDescription","SalesLT SalesOrderDetail","SalesLT SalesOrderHeader","sqlserver","database_name"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 

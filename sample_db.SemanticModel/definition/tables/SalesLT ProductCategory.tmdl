@@ -53,9 +53,8 @@ table 'SalesLT ProductCategory'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases(sqlserver),
-				    rbklsql = Source{[Name="rbklsql"]}[Data],
-				    SalesLT_ProductCategory = rbklsql{[Schema="SalesLT",Item="ProductCategory"]}[Data]
+				    Source = Sql.Database(sqlserver, database_name),
+				    SalesLT_ProductCategory = Source{[Schema="SalesLT",Item="ProductCategory"]}[Data]
 				in
 				    SalesLT_ProductCategory
 

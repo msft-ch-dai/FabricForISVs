@@ -168,9 +168,8 @@ table 'SalesLT Product'
 		mode: import
 		source =
 				let
-				    Source = Sql.Databases(sqlserver),
-				    rbklsql = Source{[Name="rbklsql"]}[Data],
-				    SalesLT_Product = rbklsql{[Schema="SalesLT",Item="Product"]}[Data]
+				    Source = Sql.Database(sqlserver, database_name),
+				    SalesLT_Product = Source{[Schema="SalesLT",Item="Product"]}[Data]
 				in
 				    SalesLT_Product
 
