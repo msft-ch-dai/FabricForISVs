@@ -45,6 +45,8 @@ cultureInfo fr-FR
 					caption: Montant des ventes 2024
 				measure NumberOfSales
 					caption: Nombre de ventes en 2024
+				measure ExplainationText
+					caption: Ce petit texte explique pourquoi 2024 n'était vraiment pas une bonne année
 				measure ProductsTableTitle
 					caption: Liste des produits 2024
 

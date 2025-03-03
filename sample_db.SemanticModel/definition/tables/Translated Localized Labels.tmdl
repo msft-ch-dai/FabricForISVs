@@ -32,7 +32,11 @@ table 'Translated Localized Labels'
 			   "Number of sales in 2024"
 			)
 
-	measure 'ExplainationText Label' = "This is a text that explains that 2024 wasn't the greatest year ever for Adventure Works but I want to re-assure our investors in the dedication of the team and new strategy for 2025"
+	measure 'ExplainationText Label' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Ce petit texte explique pourquoi 2024 n'était vraiment pas une bonne année",
+			   "This is a text that explains that 2024 wasn't the greatest year ever for Adventure Works but I want to re-assure our investors in the dedication of the team and new strategy for 2025"
+			)
 
 	measure 'ProductsTableTitle Label' =
 			SWITCH(USERCULTURE(),
