@@ -137,6 +137,42 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1875.7082491041281,
+            "y": 302.67236850446955
+          },
+          "nodeIndex": "Localized Labels",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2149.7082491041283,
+            "y": 288.67236850446955
+          },
+          "nodeIndex": "Translated Localized Labels",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2423.7082491041283,
+            "y": 338.67236850446955
+          },
+          "nodeIndex": "Translated Dataset Object Labels",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

@@ -1,0 +1,50 @@
+cultureInfo fr-FR
+	translations
+		model Model
+			table 'SalesLT Address'
+				column City
+					caption: Ville
+			table 'SalesLT Customer'
+				column Title
+					caption: Titre
+				column FirstName
+					caption: Prénom
+				column LastName
+					caption: Nom de famille
+				column EmailAddress
+					caption: Courriel
+				column Phone
+					caption: Téléphone
+			table 'SalesLT Product'
+				column Name
+					caption: Nom
+				column ProductNumber
+					caption: Numéro de produit
+				column Color
+					caption: Couleur
+				column StandardCost
+					caption: Coût standard
+				column ListPrice
+					caption: Prix
+				column Size
+					caption: Taille
+				column Weight
+					caption: Poids
+			table 'SalesLT ProductCategory'
+				column Name
+					caption: Nom
+			table 'SalesLT ProductModel'
+				column Name
+					caption: Nom
+			table 'Localized Labels'
+				measure ReportTitle
+					caption: Rapport annuel Adventure Works 2024
+				measure TotalCustomers
+					caption: Nombre de clients en 2025
+				measure SalesAmount
+					caption: Montant des ventes 2024
+				measure NumberOfSales
+					caption: Nombre de ventes en 2024
+				measure ProductsTableTitle
+					caption: Liste des produits 2024
+

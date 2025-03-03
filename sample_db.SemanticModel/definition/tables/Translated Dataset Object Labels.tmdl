@@ -1,0 +1,281 @@
+table 'Translated Dataset Object Labels'
+
+	measure 'SalesLT Address Table Name' = "SalesLT Address"
+
+	measure 'SalesLT Address:AddressID Column Name' = "AddressID"
+
+	measure 'SalesLT Address:AddressLine1 Column Name' = "AddressLine1"
+
+	measure 'SalesLT Address:AddressLine2 Column Name' = "AddressLine2"
+
+	measure 'SalesLT Address:City Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Ville",
+			   "City"
+			)
+
+	measure 'SalesLT Address:StateProvince Column Name' = "StateProvince"
+
+	measure 'SalesLT Address:CountryRegion Column Name' = "CountryRegion"
+
+	measure 'SalesLT Address:PostalCode Column Name' = "PostalCode"
+
+	measure 'SalesLT Address:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT Address:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT Customer Table Name' = "SalesLT Customer"
+
+	measure 'SalesLT Customer:CustomerID Column Name' = "CustomerID"
+
+	measure 'SalesLT Customer:NameStyle Column Name' = "NameStyle"
+
+	measure 'SalesLT Customer:Title Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Titre",
+			   "Title"
+			)
+
+	measure 'SalesLT Customer:FirstName Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Prénom",
+			   "FirstName"
+			)
+
+	measure 'SalesLT Customer:MiddleName Column Name' = "MiddleName"
+
+	measure 'SalesLT Customer:LastName Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Nom de famille",
+			   "LastName"
+			)
+
+	measure 'SalesLT Customer:Suffix Column Name' = "Suffix"
+
+	measure 'SalesLT Customer:CompanyName Column Name' = "CompanyName"
+
+	measure 'SalesLT Customer:SalesPerson Column Name' = "SalesPerson"
+
+	measure 'SalesLT Customer:EmailAddress Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Courriel",
+			   "EmailAddress"
+			)
+
+	measure 'SalesLT Customer:Phone Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Téléphone",
+			   "Phone"
+			)
+
+	measure 'SalesLT Customer:PasswordHash Column Name' = "PasswordHash"
+
+	measure 'SalesLT Customer:PasswordSalt Column Name' = "PasswordSalt"
+
+	measure 'SalesLT Customer:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT Customer:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT CustomerAddress Table Name' = "SalesLT CustomerAddress"
+
+	measure 'SalesLT CustomerAddress:CustomerID Column Name' = "CustomerID"
+
+	measure 'SalesLT CustomerAddress:AddressID Column Name' = "AddressID"
+
+	measure 'SalesLT CustomerAddress:AddressType Column Name' = "AddressType"
+
+	measure 'SalesLT CustomerAddress:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT CustomerAddress:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT Product Table Name' = "SalesLT Product"
+
+	measure 'SalesLT Product:ProductID Column Name' = "ProductID"
+
+	measure 'SalesLT Product:Name Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Nom",
+			   "Name"
+			)
+
+	measure 'SalesLT Product:ProductNumber Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Numéro de produit",
+			   "ProductNumber"
+			)
+
+	measure 'SalesLT Product:Color Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Couleur",
+			   "Color"
+			)
+
+	measure 'SalesLT Product:StandardCost Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Coût standard",
+			   "StandardCost"
+			)
+
+	measure 'SalesLT Product:ListPrice Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Prix",
+			   "ListPrice"
+			)
+
+	measure 'SalesLT Product:Size Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Taille",
+			   "Size"
+			)
+
+	measure 'SalesLT Product:Weight Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Poids",
+			   "Weight"
+			)
+
+	measure 'SalesLT Product:ProductCategoryID Column Name' = "ProductCategoryID"
+
+	measure 'SalesLT Product:ProductModelID Column Name' = "ProductModelID"
+
+	measure 'SalesLT Product:SellStartDate Column Name' = "SellStartDate"
+
+	measure 'SalesLT Product:SellEndDate Column Name' = "SellEndDate"
+
+	measure 'SalesLT Product:DiscontinuedDate Column Name' = "DiscontinuedDate"
+
+	measure 'SalesLT Product:ThumbnailPhotoFileName Column Name' = "ThumbnailPhotoFileName"
+
+	measure 'SalesLT Product:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT Product:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT ProductCategory Table Name' = "SalesLT ProductCategory"
+
+	measure 'SalesLT ProductCategory:ProductCategoryID Column Name' = "ProductCategoryID"
+
+	measure 'SalesLT ProductCategory:ParentProductCategoryID Column Name' = "ParentProductCategoryID"
+
+	measure 'SalesLT ProductCategory:Name Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Nom",
+			   "Name"
+			)
+
+	measure 'SalesLT ProductCategory:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT ProductCategory:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT ProductDescription Table Name' = "SalesLT ProductDescription"
+
+	measure 'SalesLT ProductDescription:ProductDescriptionID Column Name' = "ProductDescriptionID"
+
+	measure 'SalesLT ProductDescription:Description Column Name' = "Description"
+
+	measure 'SalesLT ProductDescription:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT ProductDescription:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT ProductModel Table Name' = "SalesLT ProductModel"
+
+	measure 'SalesLT ProductModel:ProductModelID Column Name' = "ProductModelID"
+
+	measure 'SalesLT ProductModel:Name Column Name' =
+			SWITCH(USERCULTURE(),
+			   "fr-FR", "Nom",
+			   "Name"
+			)
+
+	measure 'SalesLT ProductModel:CatalogDescription Column Name' = "CatalogDescription"
+
+	measure 'SalesLT ProductModel:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT ProductModel:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT ProductModelProductDescription Table Name' = "SalesLT ProductModelProductDescription"
+
+	measure 'SalesLT ProductModelProductDescription:ProductModelID Column Name' = "ProductModelID"
+
+	measure 'SalesLT ProductModelProductDescription:ProductDescriptionID Column Name' = "ProductDescriptionID"
+
+	measure 'SalesLT ProductModelProductDescription:Culture Column Name' = "Culture"
+
+	measure 'SalesLT ProductModelProductDescription:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT ProductModelProductDescription:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT SalesOrderDetail Table Name' = "SalesLT SalesOrderDetail"
+
+	measure 'SalesLT SalesOrderDetail:SalesOrderID Column Name' = "SalesOrderID"
+
+	measure 'SalesLT SalesOrderDetail:SalesOrderDetailID Column Name' = "SalesOrderDetailID"
+
+	measure 'SalesLT SalesOrderDetail:OrderQty Column Name' = "OrderQty"
+
+	measure 'SalesLT SalesOrderDetail:ProductID Column Name' = "ProductID"
+
+	measure 'SalesLT SalesOrderDetail:UnitPrice Column Name' = "UnitPrice"
+
+	measure 'SalesLT SalesOrderDetail:UnitPriceDiscount Column Name' = "UnitPriceDiscount"
+
+	measure 'SalesLT SalesOrderDetail:LineTotal Column Name' = "LineTotal"
+
+	measure 'SalesLT SalesOrderDetail:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT SalesOrderDetail:ModifiedDate Column Name' = "ModifiedDate"
+
+	measure 'SalesLT SalesOrderHeader Table Name' = "SalesLT SalesOrderHeader"
+
+	measure 'SalesLT SalesOrderHeader:SalesOrderID Column Name' = "SalesOrderID"
+
+	measure 'SalesLT SalesOrderHeader:RevisionNumber Column Name' = "RevisionNumber"
+
+	measure 'SalesLT SalesOrderHeader:OrderDate Column Name' = "OrderDate"
+
+	measure 'SalesLT SalesOrderHeader:DueDate Column Name' = "DueDate"
+
+	measure 'SalesLT SalesOrderHeader:ShipDate Column Name' = "ShipDate"
+
+	measure 'SalesLT SalesOrderHeader:Status Column Name' = "Status"
+
+	measure 'SalesLT SalesOrderHeader:OnlineOrderFlag Column Name' = "OnlineOrderFlag"
+
+	measure 'SalesLT SalesOrderHeader:SalesOrderNumber Column Name' = "SalesOrderNumber"
+
+	measure 'SalesLT SalesOrderHeader:PurchaseOrderNumber Column Name' = "PurchaseOrderNumber"
+
+	measure 'SalesLT SalesOrderHeader:AccountNumber Column Name' = "AccountNumber"
+
+	measure 'SalesLT SalesOrderHeader:CustomerID Column Name' = "CustomerID"
+
+	measure 'SalesLT SalesOrderHeader:ShipToAddressID Column Name' = "ShipToAddressID"
+
+	measure 'SalesLT SalesOrderHeader:BillToAddressID Column Name' = "BillToAddressID"
+
+	measure 'SalesLT SalesOrderHeader:ShipMethod Column Name' = "ShipMethod"
+
+	measure 'SalesLT SalesOrderHeader:CreditCardApprovalCode Column Name' = "CreditCardApprovalCode"
+
+	measure 'SalesLT SalesOrderHeader:SubTotal Column Name' = "SubTotal"
+
+	measure 'SalesLT SalesOrderHeader:TaxAmt Column Name' = "TaxAmt"
+
+	measure 'SalesLT SalesOrderHeader:Freight Column Name' = "Freight"
+
+	measure 'SalesLT SalesOrderHeader:TotalDue Column Name' = "TotalDue"
+
+	measure 'SalesLT SalesOrderHeader:Comment Column Name' = "Comment"
+
+	measure 'SalesLT SalesOrderHeader:rowguid Column Name' = "rowguid"
+
+	measure 'SalesLT SalesOrderHeader:ModifiedDate Column Name' = "ModifiedDate"
+
+	column unused
+		isHidden
+		displayFolder: unused
+		isNameInferred
+		sourceColumn: [unused]
+
+	partition Partition = calculated
+		source = DATATABLE("unused", STRING, {{"This is a table automatically generated by Translations Builder"}})
+

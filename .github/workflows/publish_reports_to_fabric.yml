@@ -82,5 +82,5 @@ jobs:
         Write-Host "##[debug]WorkspaceId: $workspaceId"
 
         Write-Host "##[debug]Publish report"
-        $importInfo = Import-FabricItems -workspaceId $workspaceId -path "."
+        $importInfo = Import-FabricItems -workspaceId $workspaceId -path "." -fileOverrides @{"$workingFolder\CLIENT1\expressions.tmdl" = "expressions.tmdl"} 
         Write-Host "##[debug]Imported report $importInfo"
