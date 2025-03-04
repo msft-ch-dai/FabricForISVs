@@ -10,11 +10,11 @@ annotation PBI_QueryOrder = ["SalesLT Address","SalesLT Customer","SalesLT Custo
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.140.829.0 (25.02)+64e0b2e37258cf248e8119ae244f4e8e75927166
+annotation PBIDesktopVersion = 2.141.528.0 (25.03)+364bcf2c2b5bb0f5ca49d6d6922a547463bcdfd8
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation TranslationsBuilder = Version:2.2-Updated:2025-03-03
+annotation TranslationsBuilder = Version:2.2-Updated:2025-03-04
 
 ref table 'SalesLT Address'
 ref table DateTableTemplate_06a0ef20-99d2-44c4-a515-214cb208ee3d

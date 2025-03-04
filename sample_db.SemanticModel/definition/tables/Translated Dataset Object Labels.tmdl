@@ -1,281 +1,392 @@
 table 'Translated Dataset Object Labels'
+	lineageTag: 3537061e-a837-47d4-b46d-a410131291e2
 
 	measure 'SalesLT Address Table Name' = "SalesLT Address"
+		lineageTag: 057a4ba7-e904-4732-9967-8bccef5df9ae
 
 	measure 'SalesLT Address:AddressID Column Name' = "AddressID"
+		lineageTag: 666bcabd-edb2-4602-b9d9-b9d9dd046389
 
 	measure 'SalesLT Address:AddressLine1 Column Name' = "AddressLine1"
+		lineageTag: 89b4dfd2-9182-4634-b6cb-f2c56c386632
 
 	measure 'SalesLT Address:AddressLine2 Column Name' = "AddressLine2"
+		lineageTag: 9e46411e-9a3a-4172-83e0-b9c4f3794da5
 
 	measure 'SalesLT Address:City Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Ville",
 			   "City"
 			)
+		lineageTag: 8b6f5c76-bdd2-4128-b201-92312c17753f
 
 	measure 'SalesLT Address:StateProvince Column Name' = "StateProvince"
+		lineageTag: c8d92031-4feb-40ae-8fe6-ca8ce09ed24d
 
 	measure 'SalesLT Address:CountryRegion Column Name' = "CountryRegion"
+		lineageTag: 2851173c-2864-4a92-ae9b-005202758385
 
 	measure 'SalesLT Address:PostalCode Column Name' = "PostalCode"
+		lineageTag: b30663ef-b94a-480e-b8de-0dfd32c41864
 
 	measure 'SalesLT Address:rowguid Column Name' = "rowguid"
+		lineageTag: ae669a68-c128-4ab3-a827-cec8e7b1c3cc
 
 	measure 'SalesLT Address:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 02ab005d-2d4d-48ec-a300-59b866587c4a
 
 	measure 'SalesLT Customer Table Name' = "SalesLT Customer"
+		lineageTag: 9055d384-be27-4f95-b439-f6f784549ce4
 
 	measure 'SalesLT Customer:CustomerID Column Name' = "CustomerID"
+		lineageTag: ecb5d941-004d-44e0-9010-270955e9db62
 
 	measure 'SalesLT Customer:NameStyle Column Name' = "NameStyle"
+		lineageTag: dd54a360-e058-4eca-bcc7-2530f846fa9a
 
 	measure 'SalesLT Customer:Title Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Titre",
 			   "Title"
 			)
+		lineageTag: dc32bf6a-72eb-47e4-b6ef-0b367cda5022
 
 	measure 'SalesLT Customer:FirstName Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Prénom",
 			   "FirstName"
 			)
+		lineageTag: ee039d8c-01a3-4ba5-8a4d-2126d10e0dd8
 
 	measure 'SalesLT Customer:MiddleName Column Name' = "MiddleName"
+		lineageTag: 4c14a2f4-6c30-4600-922c-36d849b17dab
 
 	measure 'SalesLT Customer:LastName Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Nom de famille",
 			   "LastName"
 			)
+		lineageTag: 7c56d14e-875c-4e51-b637-bf41766c2d35
 
 	measure 'SalesLT Customer:Suffix Column Name' = "Suffix"
+		lineageTag: 75e7d27c-6a1f-4013-9027-552b55ba86fd
 
 	measure 'SalesLT Customer:CompanyName Column Name' = "CompanyName"
+		lineageTag: ba1d29c8-6076-413a-a6e2-482a61d5abf4
 
 	measure 'SalesLT Customer:SalesPerson Column Name' = "SalesPerson"
+		lineageTag: 4c972bfa-63d0-4fe9-aa19-5f1ca2e47004
 
 	measure 'SalesLT Customer:EmailAddress Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Courriel",
 			   "EmailAddress"
 			)
+		lineageTag: 80bab514-f86d-4574-a5b3-2bd9a8b7d661
 
 	measure 'SalesLT Customer:Phone Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Téléphone",
 			   "Phone"
 			)
+		lineageTag: 13b4b359-5570-45a3-9c6d-0889fd8a7dc1
 
 	measure 'SalesLT Customer:PasswordHash Column Name' = "PasswordHash"
+		lineageTag: a4e66080-fc8d-4ef8-9fe6-88e5b6517f28
 
 	measure 'SalesLT Customer:PasswordSalt Column Name' = "PasswordSalt"
+		lineageTag: c9b28f95-efcb-42ad-bbc0-7dad92daad92
 
 	measure 'SalesLT Customer:rowguid Column Name' = "rowguid"
+		lineageTag: c0b56fc8-ad66-4610-96f4-778216d6bde7
 
 	measure 'SalesLT Customer:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: c4f1ec84-afd1-42ff-b779-26ca6e185f62
 
 	measure 'SalesLT CustomerAddress Table Name' = "SalesLT CustomerAddress"
+		lineageTag: a7cd7398-7bf8-4ef5-be66-836539dd30d5
 
 	measure 'SalesLT CustomerAddress:CustomerID Column Name' = "CustomerID"
+		lineageTag: 0819ca76-20af-4469-b321-a9daca4e25cc
 
 	measure 'SalesLT CustomerAddress:AddressID Column Name' = "AddressID"
+		lineageTag: fe27d47a-e0b4-4eab-9594-52961a759bd0
 
 	measure 'SalesLT CustomerAddress:AddressType Column Name' = "AddressType"
+		lineageTag: 05e188af-f4d1-4b20-b352-e0c2e9ab42cf
 
 	measure 'SalesLT CustomerAddress:rowguid Column Name' = "rowguid"
+		lineageTag: 89035957-c3d1-4e81-89ef-7b80393c9c76
 
 	measure 'SalesLT CustomerAddress:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: b9f8eaeb-8da3-43c8-a111-096274ef534c
 
 	measure 'SalesLT Product Table Name' = "SalesLT Product"
+		lineageTag: 4a8fbfc4-6ede-4c2e-8e47-0366558fe61b
 
 	measure 'SalesLT Product:ProductID Column Name' = "ProductID"
+		lineageTag: 468eeb47-21c4-4d6d-a556-0e749d2edd75
 
 	measure 'SalesLT Product:Name Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Nom",
 			   "Name"
 			)
+		lineageTag: 67d8c424-488c-4293-8383-e0cfaf3d9980
 
 	measure 'SalesLT Product:ProductNumber Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Numéro de produit",
 			   "ProductNumber"
 			)
+		lineageTag: 38115126-1139-448a-b20f-f3b6d1a339b7
 
 	measure 'SalesLT Product:Color Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Couleur",
 			   "Color"
 			)
+		lineageTag: 31215dff-1286-416d-9267-67c74c900a93
 
 	measure 'SalesLT Product:StandardCost Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Coût standard",
 			   "StandardCost"
 			)
+		lineageTag: 056da766-f63e-4d68-9912-2d3ae3f19c3c
 
 	measure 'SalesLT Product:ListPrice Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Prix",
 			   "ListPrice"
 			)
+		lineageTag: 3fee349a-d9c1-4053-9adf-0de7f3154110
 
 	measure 'SalesLT Product:Size Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Taille",
 			   "Size"
 			)
+		lineageTag: 6f49e54a-b932-437a-b329-52a78af83389
 
 	measure 'SalesLT Product:Weight Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Poids",
 			   "Weight"
 			)
+		lineageTag: 57040e35-3446-4a23-a8ae-a4477acb2d0f
 
 	measure 'SalesLT Product:ProductCategoryID Column Name' = "ProductCategoryID"
+		lineageTag: cd1eea01-cff5-4eb3-8110-f86142f40f68
 
 	measure 'SalesLT Product:ProductModelID Column Name' = "ProductModelID"
+		lineageTag: db2888a6-7abc-4264-bbca-f7aa6fe9604e
 
 	measure 'SalesLT Product:SellStartDate Column Name' = "SellStartDate"
+		lineageTag: 2594ada3-1249-474a-bc04-1404ab12bc67
 
 	measure 'SalesLT Product:SellEndDate Column Name' = "SellEndDate"
+		lineageTag: 5167cf2a-8d24-4657-bdc6-ba921d57a808
 
 	measure 'SalesLT Product:DiscontinuedDate Column Name' = "DiscontinuedDate"
+		lineageTag: f3795b54-0632-4c8a-8c00-8472324338dc
 
 	measure 'SalesLT Product:ThumbnailPhotoFileName Column Name' = "ThumbnailPhotoFileName"
+		lineageTag: 004369e2-31cb-44ab-b5a5-f3e51a701548
 
 	measure 'SalesLT Product:rowguid Column Name' = "rowguid"
+		lineageTag: f45de8dc-5199-4e6d-ba08-778ca34315fc
 
 	measure 'SalesLT Product:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: bb973a80-c5fe-4aa8-916e-f7064891cf00
 
 	measure 'SalesLT ProductCategory Table Name' = "SalesLT ProductCategory"
+		lineageTag: 79ebf0c1-03a9-4c66-9124-0ee472dbd7ea
 
 	measure 'SalesLT ProductCategory:ProductCategoryID Column Name' = "ProductCategoryID"
+		lineageTag: e94503d5-1bc4-4e9e-8da3-393bc54aa9e5
 
 	measure 'SalesLT ProductCategory:ParentProductCategoryID Column Name' = "ParentProductCategoryID"
+		lineageTag: 41211d84-eaf9-41b5-8b3e-38b80e235168
 
 	measure 'SalesLT ProductCategory:Name Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Nom",
 			   "Name"
 			)
+		lineageTag: ed8e2209-add0-4f67-95b0-de4712f1d950
 
 	measure 'SalesLT ProductCategory:rowguid Column Name' = "rowguid"
+		lineageTag: cfffa503-a7a9-4041-bedf-bb73ce25ee79
 
 	measure 'SalesLT ProductCategory:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 606e82ad-30ef-428a-86ab-2be5a1ff1d35
 
 	measure 'SalesLT ProductDescription Table Name' = "SalesLT ProductDescription"
+		lineageTag: 2d716d2f-5211-4d98-b8ac-0ee200bd670a
 
 	measure 'SalesLT ProductDescription:ProductDescriptionID Column Name' = "ProductDescriptionID"
+		lineageTag: c1755bd2-5ffd-4ec4-872b-abe3d8186d6d
 
 	measure 'SalesLT ProductDescription:Description Column Name' = "Description"
+		lineageTag: be6c6d65-513b-4189-ae70-5c3eee1b28da
 
 	measure 'SalesLT ProductDescription:rowguid Column Name' = "rowguid"
+		lineageTag: 26195337-bf3f-4478-9e2f-c236be93198c
 
 	measure 'SalesLT ProductDescription:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 2121ab9f-6c41-4f74-a440-3bf8cfa02cf3
 
 	measure 'SalesLT ProductModel Table Name' = "SalesLT ProductModel"
+		lineageTag: b4688592-c901-4e09-8138-8b905b931182
 
 	measure 'SalesLT ProductModel:ProductModelID Column Name' = "ProductModelID"
+		lineageTag: 04ec855c-7bda-43fa-8d7a-d433a1cd057d
 
 	measure 'SalesLT ProductModel:Name Column Name' =
 			SWITCH(USERCULTURE(),
 			   "fr-FR", "Nom",
 			   "Name"
 			)
+		lineageTag: b0128289-26fd-4074-9ea1-ba17462226d8
 
 	measure 'SalesLT ProductModel:CatalogDescription Column Name' = "CatalogDescription"
+		lineageTag: 52d31413-e26c-4565-a583-9a3c024f7ffa
 
 	measure 'SalesLT ProductModel:rowguid Column Name' = "rowguid"
+		lineageTag: 9c0299b6-7cca-423d-9976-1b6c179f6580
 
 	measure 'SalesLT ProductModel:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 8cf5628a-08a7-4eb4-9ea6-e94b6c7e29b8
 
 	measure 'SalesLT ProductModelProductDescription Table Name' = "SalesLT ProductModelProductDescription"
+		lineageTag: df32e26d-fac5-4fe7-b6f2-1219761fbd8d
 
 	measure 'SalesLT ProductModelProductDescription:ProductModelID Column Name' = "ProductModelID"
+		lineageTag: 232a9bab-2b31-4959-9e71-a6a300218219
 
 	measure 'SalesLT ProductModelProductDescription:ProductDescriptionID Column Name' = "ProductDescriptionID"
+		lineageTag: 0c97464a-3753-4a68-8882-c682d5802da2
 
 	measure 'SalesLT ProductModelProductDescription:Culture Column Name' = "Culture"
+		lineageTag: 289aad88-4f1d-44d3-91ad-cb4639e5b9b5
 
 	measure 'SalesLT ProductModelProductDescription:rowguid Column Name' = "rowguid"
+		lineageTag: 5b6a34c1-cc8e-40e6-8e11-361552732f6e
 
 	measure 'SalesLT ProductModelProductDescription:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 9f1380b4-35fd-43ac-a575-c660f3949f67
 
 	measure 'SalesLT SalesOrderDetail Table Name' = "SalesLT SalesOrderDetail"
+		lineageTag: 523f99e1-cd23-48fe-aa3b-945ea2d971da
 
 	measure 'SalesLT SalesOrderDetail:SalesOrderID Column Name' = "SalesOrderID"
+		lineageTag: a4cc0f5b-3771-4517-8b45-204b7e91c38f
 
 	measure 'SalesLT SalesOrderDetail:SalesOrderDetailID Column Name' = "SalesOrderDetailID"
+		lineageTag: 0fc899d7-5fe9-4f6e-874b-ab4c0fe97124
 
 	measure 'SalesLT SalesOrderDetail:OrderQty Column Name' = "OrderQty"
+		lineageTag: 0cdaf67b-fec0-48e7-9216-1fde90de63b9
 
 	measure 'SalesLT SalesOrderDetail:ProductID Column Name' = "ProductID"
+		lineageTag: 13f740ac-af60-4586-b345-d6a38327530f
 
 	measure 'SalesLT SalesOrderDetail:UnitPrice Column Name' = "UnitPrice"
+		lineageTag: 8e1eb0fc-a212-49e7-b4b3-084b0a5057d0
 
 	measure 'SalesLT SalesOrderDetail:UnitPriceDiscount Column Name' = "UnitPriceDiscount"
+		lineageTag: e78f56ef-31bd-4438-badd-2291f28a2cd5
 
 	measure 'SalesLT SalesOrderDetail:LineTotal Column Name' = "LineTotal"
+		lineageTag: f030fa58-9cb8-4912-bc09-bc38db4d6ee5
 
 	measure 'SalesLT SalesOrderDetail:rowguid Column Name' = "rowguid"
+		lineageTag: 2a03d96f-482f-4335-aec5-6eb4dfad8ee9
 
 	measure 'SalesLT SalesOrderDetail:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 40aa91e7-8655-409f-878c-56ee16999efc
 
 	measure 'SalesLT SalesOrderHeader Table Name' = "SalesLT SalesOrderHeader"
+		lineageTag: 904bae0d-1e1f-4ad8-8925-5001dffb08f5
 
 	measure 'SalesLT SalesOrderHeader:SalesOrderID Column Name' = "SalesOrderID"
+		lineageTag: b5247d1e-7826-4ed7-ad57-1b7ddd45f63a
 
 	measure 'SalesLT SalesOrderHeader:RevisionNumber Column Name' = "RevisionNumber"
+		lineageTag: 32708773-28eb-4e59-a9ff-b4c2c0f6412b
 
 	measure 'SalesLT SalesOrderHeader:OrderDate Column Name' = "OrderDate"
+		lineageTag: 0984fef6-53ba-49b7-8fda-832e651ec5e0
 
 	measure 'SalesLT SalesOrderHeader:DueDate Column Name' = "DueDate"
+		lineageTag: 94748de9-310b-4854-9423-a27653561742
 
 	measure 'SalesLT SalesOrderHeader:ShipDate Column Name' = "ShipDate"
+		lineageTag: 4c1294ea-2836-4b72-8f36-390c899c6290
 
 	measure 'SalesLT SalesOrderHeader:Status Column Name' = "Status"
+		lineageTag: 322b4f2e-1ce9-40cb-bf87-653a8cb22c72
 
 	measure 'SalesLT SalesOrderHeader:OnlineOrderFlag Column Name' = "OnlineOrderFlag"
+		lineageTag: e1fcd1df-84c3-4f1e-99d7-6b1ca8a25cc1
 
 	measure 'SalesLT SalesOrderHeader:SalesOrderNumber Column Name' = "SalesOrderNumber"
+		lineageTag: 8314e691-91fb-4ac7-a154-b82814037edf
 
 	measure 'SalesLT SalesOrderHeader:PurchaseOrderNumber Column Name' = "PurchaseOrderNumber"
+		lineageTag: 7b97e489-5c19-4d79-a782-06f5c70951b1
 
 	measure 'SalesLT SalesOrderHeader:AccountNumber Column Name' = "AccountNumber"
+		lineageTag: 2a47d113-55c4-4761-9657-0de97a4a7df1
 
 	measure 'SalesLT SalesOrderHeader:CustomerID Column Name' = "CustomerID"
+		lineageTag: 76b172af-e94d-40df-9041-bdb6d0d5b993
 
 	measure 'SalesLT SalesOrderHeader:ShipToAddressID Column Name' = "ShipToAddressID"
+		lineageTag: aa2c992d-8768-4e7a-8067-0c0c917e28e0
 
 	measure 'SalesLT SalesOrderHeader:BillToAddressID Column Name' = "BillToAddressID"
+		lineageTag: 7c71cea0-3da7-46a0-ad80-75327afd9533
 
 	measure 'SalesLT SalesOrderHeader:ShipMethod Column Name' = "ShipMethod"
+		lineageTag: a31b5a81-18eb-414e-9234-5ae1c773c54d
 
 	measure 'SalesLT SalesOrderHeader:CreditCardApprovalCode Column Name' = "CreditCardApprovalCode"
+		lineageTag: 3088ea55-6701-4b69-8a33-f6cbd08bf4f8
 
 	measure 'SalesLT SalesOrderHeader:SubTotal Column Name' = "SubTotal"
+		lineageTag: d13f4b8d-c30b-4f6b-8b00-8f7dbc54fc60
 
 	measure 'SalesLT SalesOrderHeader:TaxAmt Column Name' = "TaxAmt"
+		lineageTag: 0ad459cf-a49b-48ef-a1aa-a7005d258fa5
 
 	measure 'SalesLT SalesOrderHeader:Freight Column Name' = "Freight"
+		lineageTag: 6ebfab0c-176b-43e6-bdf3-3ea4403363fb
 
 	measure 'SalesLT SalesOrderHeader:TotalDue Column Name' = "TotalDue"
+		lineageTag: ded85c90-92f2-48e5-ad6e-c9663a43ac69
 
 	measure 'SalesLT SalesOrderHeader:Comment Column Name' = "Comment"
+		lineageTag: 208d92d0-87b8-44ed-9c2d-3f6894503c91
 
 	measure 'SalesLT SalesOrderHeader:rowguid Column Name' = "rowguid"
+		lineageTag: 4f14c545-a0e6-4640-b194-0f7feb8462ba
 
 	measure 'SalesLT SalesOrderHeader:ModifiedDate Column Name' = "ModifiedDate"
+		lineageTag: 22bbb531-ffd7-4233-bb00-66a015ae8a65
 
 	column unused
 		isHidden
 		displayFolder: unused
+		lineageTag: 3f0a6459-2e59-4a95-b477-edc27cb07108
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [unused]
 
+		annotation SummarizationSetBy = Automatic
+
 	partition Partition = calculated
+		mode: import
 		source = DATATABLE("unused", STRING, {{"This is a table automatically generated by Translations Builder"}})
 
