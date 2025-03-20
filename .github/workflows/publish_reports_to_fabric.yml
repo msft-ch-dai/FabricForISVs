@@ -63,6 +63,8 @@ jobs:
         CLIENT_SECRET: ${{ secrets.client_secret }}
         TENANT_ID: ${{ secrets.tenant_id }}
         WORKSPACE_NAME: ${{ vars.workspace_name }}
+        DB_SERVER_URI: ${{ vars.db_server_uri }}
+        DB_NAME: ${{ vars.db_name }}
         ENVIRONMENT: ${{ inputs.environment }}
       run: |
         $workingFolder = "$env:WORKING_FOLDER"
@@ -70,6 +72,8 @@ jobs:
         $appSecret = "$env:CLIENT_SECRET"
         $tenantId = "$env:TENANT_ID"
         $workspaceName = "$env:WORKSPACE_NAME"
+        $dbName = "$env:DB_SERVER_URI"
+        $dbServerUri = "$env:DB_NAME"
 
         Write-Host "##[debug]workingFolder: $workingFolder appId $appId workspaceName $workspaceName"
 
@@ -81,6 +85,17 @@ jobs:
         $workspaceId = New-FabricWorkspace -name $workspaceName -skipErrorIfExists
         Write-Host "##[debug]WorkspaceId: $workspaceId"
 
+        $params = @{}
+        if($dbServerUri){
+            $params["sqlserver"] = $dbServerUri
+        }
+        if($dbName){
+            $params["database_name"] = $dbName
+        }
+        Write-Host "##[debug]Set-SemanticModelParameters: $($params["database_name"])"
+        Set-SemanticModelParameters -path "$workingFolder\sample_db.SemanticModel" -parameters $params
+
         Write-Host "##[debug]Publish report"
         $importInfo = Import-FabricItems -workspaceId $workspaceId -path "." -fileOverrides @{"$workingFolder\CLIENT1\expressions.tmdl" = "expressions.tmdl"} 
         Write-Host "##[debug]Imported report $importInfo"
+
