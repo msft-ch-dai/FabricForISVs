@@ -96,6 +96,7 @@ jobs:
         Set-SemanticModelParameters -path "$workingFolder\sample_db.SemanticModel" -parameters $params
 
         Write-Host "##[debug]Publish report"
-        $importInfo = Import-FabricItems -workspaceId $workspaceId -path "." -fileOverrides @{"$workingFolder\CLIENT1\expressions.tmdl" = "expressions.tmdl"} 
+        $importInfo = Import-FabricItems -workspaceId $workspaceId -path "."
+        # $importInfo = Import-FabricItems -workspaceId $workspaceId -path "." -fileOverrides @{"$workingFolder\CLIENT1\expressions.tmdl" = "expressions.tmdl"} 
         Write-Host "##[debug]Imported report $importInfo"
 
