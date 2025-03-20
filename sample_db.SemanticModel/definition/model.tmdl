@@ -44,9 +44,10 @@ ref table LocalDateTable_0fdb13c2-5268-4687-bd67-4adfe83d83bb
 ref table LocalDateTable_65d7e0dc-6fd9-4a1e-bd70-6cb09d1ec4b4
 ref table LocalDateTable_0852860e-4b25-43a2-b890-95dbf88780dc
 ref table 'Localized Labels'
-ref table 'Translated Localized Labels'
 ref table 'Translated Dataset Object Labels'
+ref table 'Translated Localized Labels'
 
 ref cultureInfo en-GB
 ref cultureInfo fr-FR
+ref cultureInfo de-DE
 
