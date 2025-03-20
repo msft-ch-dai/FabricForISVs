@@ -72,8 +72,8 @@ jobs:
         $appSecret = "$env:CLIENT_SECRET"
         $tenantId = "$env:TENANT_ID"
         $workspaceName = "$env:WORKSPACE_NAME"
-        $dbName = "$env:DB_SERVER_URI"
-        $dbServerUri = "$env:DB_NAME"
+        $dbName = "$env:DB_NAME"
+        $dbServerUri = "$env:DB_SERVER_URI"
 
         Write-Host "##[debug]workingFolder: $workingFolder appId $appId workspaceName $workspaceName"
 
@@ -99,4 +99,3 @@ jobs:
         $importInfo = Import-FabricItems -workspaceId $workspaceId -path "."
         # $importInfo = Import-FabricItems -workspaceId $workspaceId -path "." -fileOverrides @{"$workingFolder\CLIENT1\expressions.tmdl" = "expressions.tmdl"} 
         Write-Host "##[debug]Imported report $importInfo"
-
